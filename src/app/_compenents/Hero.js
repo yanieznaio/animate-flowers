@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div className='flex flex-col  items-center  relative pt-48 '>
 
-      <div className='md:w-[700px] text-[60px] md:text-[100px] text-[#F8F6F4] leading-[60px] md:leading-[90px] text-end absolute top-[100px]   right-2 md:right-11 z-10'>
+      <div className='md:w-[700px] text-[50px] md:text-[100px] text-[#F8F6F4] leading-[60px] md:leading-[90px] text-end absolute top-[100px]   right-2 md:right-11 z-10'>
       <AnimatedTextWord text={["UN-", "CONDITIONAL", "LOVE FOR", "FLOWER"]}/>
       </div>
   
