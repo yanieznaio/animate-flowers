@@ -2,8 +2,7 @@
 import React from 'react'
 import flower from "../../../assets/flower5.jpg"
 import Image from 'next/image'
-import {motion} from 'framer-motion'
-import AnimateTitle from './AnimateTitle'
+import {motion} from "framer-motion"
 import AnimatedTextWord from './AnimatedTextWord'
 
 
