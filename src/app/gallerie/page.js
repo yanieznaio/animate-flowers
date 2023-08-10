@@ -58,11 +58,11 @@ export default Page
 const Column = ({images, y=0, top}) => {
 
   return (
-    <motion.div style={{y}} className={`w-[25%] h-full flex flex-col gap-[2vw] min-w-[250px] relative ${top}`}>
+    <motion.div style={{y}} className={`w-[25%] h-full flex flex-col gap-[2vw] md:min-w-[250px] relative ${top}`}>
       {
         images.map((src, i) => {
           return <div key={i} className='h-full w-full relative rounded-[1vw] overflow-hidden'>
-            <Image src={`/gallerie/${src}`} fill alt="image" className='object-cover '/>
+            <Image src={`/gallerie/${src}`} fill alt="image" className='object-cover'/>
           </div>
         })
 
