@@ -24,7 +24,7 @@ const LastSection = () => {
   }
   return (
     <div className='text-[#F8F6F4] relative pb-4'>
-      <div className='text-[51px] md:text-[91px] md:w-1/2 -mt-11 leading-[50px] md:leading-[100px] md:ml-24'>
+      <div className='text-[51px] md:text-[91px] md:w-[60%] -mt-11 leading-[50px] md:leading-[100px] md:ml-24'>
         <AnimatedTextWord text={["ORCHIDEES ", "ORCHIDACEES"]}/>
      
       </div>
