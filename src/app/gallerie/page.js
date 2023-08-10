@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
-
+import Lenis from '@studio-freight/lenis'
 import { useTransform, useScroll, motion } from 'framer-motion'
 import { useRef } from 'react'
 
@@ -21,6 +21,18 @@ const images = [
   "12.jpg",
 ]
 const Page = () => {
+  useEffect(()=> {
+    const lenis = new Lenis()
+
+
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+  }, [])
 
   const container = useRef(null);
   const {height} = useDimension();
