@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 import { useTransform, useScroll, motion } from 'framer-motion'
 import { useRef } from 'react'
-import Lenis from '@studio-freight/lenis'
+
 import useDimension from '../useDimension'
 const images = [
   "1.jpg",
@@ -33,19 +33,11 @@ const Page = () => {
   const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 3.3])
   const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25])
   const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3])
-  useEffect(() => {
-    const lenis = new Lenis()    
-    function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
-    
-    requestAnimationFrame(raf)
-  })
+
   return (
     <main className='bg-[#F77E21]'>
     <div className='h-[100vh] flex justify-center items-center'>
-      <h1 className='text-white text-[90px] md:text-[130px]'>GALLERIE</h1>
+      <h1 className='text-white text-[70px] md:text-[130px]'>GALLERIE</h1>
     </div>
     <div ref={container} className='h-[175vh] bg-[#2d2d2d] flex  gap-[2vw] p-[2vw] box-border overflow-hidden'>
       <Column images={[images[0], images[1], images[2]]} y={y} top="-top-[45%]"/>
