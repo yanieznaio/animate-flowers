@@ -18,7 +18,7 @@ const Hero = () => {
  
       <motion.div className='rounded-t-full md:w-[900px] p-9 h-auto  bg-gradient-to-r  from-[#FF8303] via-[#C8AE7D] to-[#876445] z-0 flex justify-center'>
         <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{type: "spring"}} className='relative w-[80vw] md:w-[900px] h-[600px] md:h-[900px]'>
-        <Image src={flower} alt="" fill={true} className='rounded-t-full  '></Image>
+        <Image src={flower} alt="" fill={true} className='rounded-t-full  object-cover'></Image>
         </motion.div>
 
       </motion.div>

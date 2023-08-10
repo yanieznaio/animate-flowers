@@ -35,19 +35,19 @@ const LastSection = () => {
         <div className='flex gap-3'>
           <div className='  bg-[#0081C9] overflow-hidden rounded-t-full flex justify-center items-center'>
             <motion.div  variants={img} initial="hidden" animate={isInView &&"visible"} className='w-[250px] h-[350px]  relative'>
-            <Image  src={flower} fill={true} alt=""  className='rounded-t-full'></Image>
+            <Image  src={flower} fill={true} alt=""  className='rounded-t-full object-cover'></Image>
             </motion.div>
     
           </div>
           <div  className=' w-[250px] h-[350px] bg-[#0081C9] overflow-hidden rounded-full flex justify-center items-center'>
             <motion.div variants={img} initial="hidden" animate={isInView &&"visible"} className='w-[250px] h-[350px] relative'>
-            <Image src={flower2} fill={true} alt="" className='rounded-full'></Image>
+            <Image src={flower2} fill={true} alt="" className='rounded-full object-cover'></Image>
             </motion.div>
 
           </div>
           <div className=' w-[250px] h-[350px]  bg-[#0081C9] overflow-hidden rounded-t-full flex justify-center items-center'>
             <motion.div variants={img} initial="hidden" animate={isInView &&"visible"} className='w-[250px] h-[350px] relative '>
-            <Image src={flower3} fill={true} alt="" className='rounded-t-full'></Image>
+            <Image src={flower3} fill={true} alt="" className='rounded-t-full object-cover'></Image>
             </motion.div>
        
           </div>
